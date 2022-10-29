@@ -1,12 +1,52 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Hello World!</title>
-    <link rel="stylesheet" href="index.css" />
-  </head>
-  <body>
-    <h1>💖 Hello World!</h1>
-    <p>Welcome to your Electron application.</p>
-  </body>
+<html lang='vi'>
+<head>
+  <meta charset="UTF-8" />
+  <title>Hello World!</title>
+  <link rel="stylesheet" href="index.css" />
+
+  <script src="renderer.js" defer></script>
+</head>
+<body>
+  <!-- build a matrix 3x3 that take user input in each cell-->
+  <div class="matrix">
+    <div class="row">
+      <div class="cell">
+        <input type="text" id="cell1" placeholder='0' />
+      </div>
+      <div class="cell">
+        <input type="text" id="cell2" placeholder='0' />
+      </div>
+      <div class="cell">
+        <input type="text" id="cell3" placeholder='0' />
+      </div>
+    </div>
+    <div class="row">
+      <div class="cell">
+        <input type="text" id="cell4" placeholder='0' />
+      </div>
+      <div class="cell">
+        <input type="text" id="cell5" placeholder='0' />
+      </div>
+      <div class="cell">
+        <input type="text" id="cell6" placeholder='0' />
+      </div>
+    </div>
+    <div class="row">
+      <div class="cell">
+        <input type="text" id="cell7" placeholder='0' />
+      </div>
+      <div class="cell">
+        <input type="text" id="cell8" placeholder='0' />
+      </div>
+      <div class="cell">
+        <input type="text" id="cell9" placeholder='0' />
+      </div>
+    </div>
+    <!-- Make a submit button -->
+    <div class="row">
+      <div class="cell">
+        <button id="submit" type='button' onclick='test()'>Submit</button>
+      </div>
+</body>
 </html>
