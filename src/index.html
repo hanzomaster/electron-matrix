@@ -1,56 +1,134 @@
 <!DOCTYPE html>
 <html lang='vi'>
-
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hello World!</title>
   <link rel="stylesheet" href="index.css" />
 
   <script src="renderer.js" defer></script>
 </head>
-
 <body>
-  <!-- build a matrix 3x3 that take user input in each cell-->
-  <div class="matrix">
-    <div class="row">
-      <div class="cell">
-        <input type="text" id="cell1" placeholder='0' />
-      </div>
-      <div class="cell">
-        <input type="text" id="cell2" placeholder='0' />
-      </div>
-      <div class="cell">
-        <input type="text" id="cell3" placeholder='0' />
-      </div>
+  <form class="container">
+    <div>
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              <input type='text' placeholder='0' value='3'>
+            </td>
+            <td>
+              <input type='text' placeholder='0' value='32'>
+            </td>
+            <td>
+              <input type='text' placeholder='0' value='4'>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type='text' placeholder='0' value='3'>
+            </td>
+            <td>
+              <input type='text' placeholder='0' value='34'>
+            </td>
+            <td>
+              <input type='text' placeholder='0' value='2'>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type='text' placeholder='0' value='4'>
+            </td>
+            <td>
+              <input type='text' placeholder='0' value='5'>
+            </td>
+            <td>
+              <input type='text' placeholder='0' value='1'>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span id='determinant1'>0</span>
     </div>
-    <div class="row">
-      <div class="cell">
-        <input type="text" id="cell4" placeholder='0' />
-      </div>
-      <div class="cell">
-        <input type="text" id="cell5" placeholder='0' />
-      </div>
-      <div class="cell">
-        <input type="text" id="cell6" placeholder='0' />
-      </div>
+    <input type="submit" value="submit">
+    <div>
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              <input type='text' placeholder='0' value='1'>
+            </td>
+            <td>
+              <input type='text' placeholder='0' value='1'>
+            </td>
+            <td>
+              <input type='text' placeholder='0' value='1'>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type='text' placeholder='0' value='1'>
+            </td>
+            <td>
+              <input type='text' placeholder='0' value='1'>
+            </td>
+            <td>
+              <input type='text' placeholder='0' value='1'>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type='text' placeholder='0' value='1'>
+            </td>
+            <td>
+              <input type='text' placeholder='0' value='1'>
+            </td>
+            <td>
+              <input type='text' placeholder='0' value='1'>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span id='determinant2'>0</span>
     </div>
-    <div class="row">
-      <div class="cell">
-        <input type="text" id="cell7" placeholder='0' />
-      </div>
-      <div class="cell">
-        <input type="text" id="cell8" placeholder='0' />
-      </div>
-      <div class="cell">
-        <input type="text" id="cell9" placeholder='0' />
-      </div>
-    </div>
-    <!-- Make a submit button -->
-    <div class="row">
-      <div class="cell">
-        <button id="submit" type='button' onclick='test()'>Submit</button>
-      </div>
-      <p>Hello</p>
+  </form>
+  <table class='result'>
+    <tbody>
+      <tr>
+        <td>
+          <input type='text' placeholder='0'>
+        </td>
+        <td>
+          <input type='text' placeholder='0'>
+        </td>
+        <td>
+          <input type='text' placeholder='0'>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type='text' placeholder='0'>
+        </td>
+        <td>
+          <input type='text' placeholder='0'>
+        </td>
+        <td>
+          <input type='text' placeholder='0'>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type='text' placeholder='0'>
+        </td>
+        <td>
+          <input type='text' placeholder='0'>
+        </td>
+        <td>
+          <input type='text' placeholder='0'>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </body>
-
 </html>

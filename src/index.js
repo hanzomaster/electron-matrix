@@ -9,11 +9,14 @@ if (require("electron-squirrel-startup")) {
 const createWindow = () => {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    width: 1000,
+    width: 1200,
     height: 800,
     webPreferences: {
       preload: path.join(__dirname, "preload.js"),
+      nodeIntegration: true,
+      contextIsolation: false,
     },
+    center: true,
   });
 
   // and load the index.html of the app.
@@ -45,10 +48,10 @@ app.on("activate", () => {
   }
 });
 
-ipcMain.on("submitForm", () => {
-  console.log("Form submitted");
-});
-
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and import them here.
-console.log("Hello from")
+console.log("Hello from");
+
+ipcMain.on("form-submitted", (event, arg) => {
+  console.log(arg);
+});
