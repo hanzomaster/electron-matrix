@@ -22,8 +22,12 @@ document.querySelector("form")?.addEventListener("submit", (e) => {
       row = [];
     }
   }
-  const determinant1 = determinant(matrix1);
-  const determinant2 = determinant(matrix2);
+  const determinant1 = document.querySelector("#determinant1");
+  const determinant2 = document.querySelector("#determinant2");
+  determinant1.style.display = "inline-block";
+  determinant2.style.display = "inline-block";
+  determinant1.textContent = determinant(matrix1);
+  determinant2.textContent = determinant(matrix2);
 
   const product = multiplyMatrices(matrix1, matrix2);
 
@@ -36,7 +40,6 @@ document.querySelector("form")?.addEventListener("submit", (e) => {
     }
   }
 
-  console.log(determinant(matrix1));
   console.log(multiplyMatrices(matrix1, matrix2));
   ipcRenderer.send("form-submitted", 1);
 });

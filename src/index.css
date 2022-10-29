@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,6 +8,7 @@
 
 body {
   background-color: #f5f5f5;
+  font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -43,7 +46,6 @@ input[type="submit"]:hover {
   align-items: center;
   justify-content: center;
   height: 30vh;
-  font-weight: bold;
 }
 
 .result input {
@@ -52,12 +54,12 @@ input[type="submit"]:hover {
 
 span {
   display: none;
-
+  font-size: smaller;
   /* display: inline-block; */
   width: 100%;
   text-align: center;
 
   border: 1px solid #000;
   border-radius: 5px;
-  padding: 10px;
+  padding: 5px;
 }
